@@ -13,6 +13,13 @@ export default class Counter extends Component {
             return {counter: prevstate.counter +1}
         })
     }
+
+    minuseCounterHandler(){
+        this.setState(prevstate => {
+            return {counter: prevstate.Counter -1}
+        })
+    }
+
     render() {
         return (
             <div>
