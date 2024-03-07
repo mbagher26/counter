@@ -20,7 +20,7 @@ export default class Counter extends Component {
 
     minuseCounterHandler(){
         this.setState(prevstate => {
-            return {counter: prevstate.Counter -1}
+            return {counter: prevstate.counter -1}
         })
     }
 
