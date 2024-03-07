@@ -6,6 +6,10 @@ export default class Counter extends Component {
         this.state ={
             counter : 0
         }
+
+        this.addCounterHandler = this.addCounterHandler.bind(this)
+        this.minuseCounterHandler = this.minuseCounterHandler.bind(this)
+
     }
 
     addCounterHandler(){
@@ -27,8 +31,8 @@ export default class Counter extends Component {
                     <div className='counter'>
                         <h2>Counter</h2>
                         <h3>{this.state.counter}</h3>
-                        <button className='add'>addCounter</button>
-                        <button className='minuse'>minusefromcounter</button>
+                        <button onClick={this.addCounterHandler} className='add'>addCounter</button>
+                        <button onClick={this.minuseCounterHandler} className='minuse'>minusefromcounter</button>
                     </div>
                 </section>
             </div>
