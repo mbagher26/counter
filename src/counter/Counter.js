@@ -8,6 +8,11 @@ export default class Counter extends Component {
         }
     }
 
+    addCounterHandler(){
+        this.setState(prevstate =>{
+            return {counter: prevstate.counter +1}
+        })
+    }
     render() {
         return (
             <div>
